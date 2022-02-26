@@ -1,0 +1,29 @@
+{
+  "name": "js-study-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API for \"js-study\", one of the Git repositories",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/je0489/js-study-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/je0489/js-study-api/issues"
+  },
+  "homepage": "https://github.com/je0489/js-study-api#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
