@@ -1,8 +1,7 @@
 import express from "express";
 import morgan from "morgan";
-import router from "./Router/routers";
+import router from "./Router/routers.js";
 
-const GIT_LOCAL_PATH = "js-study-api";
 const app = express();
 const logger = morgan("dev");
 
@@ -13,6 +12,6 @@ app.use(
   })
 );
 app.use(express.json());
-app.use(`/${GIT_LOCAL_PATH}`, router);
+app.use("/", router);
 
 export default app;
